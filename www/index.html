@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src="components/codigo.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      ons.ready(function() {
+        console.log("Onsen UI is ready!");
+      });
+
+      if (ons.platform.isIPhoneX()) {
+        document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+        document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+      }
+    </script>
+  </head>
+
+  <body class="corBg bg-danger">
+
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="col-12 bg-primary text-center mt-2">
+          <h3>Exercício 4 Quiz</h3>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12 bg-primary text-center">
+          <form onsubmit="return false">
+            <h4 >JoJo-Quiz?</h4><br>
+            <h5>1)Quem matou William Antonio Zeppeli em Phantom Blood <br>
+            <button class="btn btn-danger mt-3" onclick="per1()">RESPONDER</button><br>
+            2)Quem tem posse do Stand Za Warudo?<br>
+            <button class="btn btn-danger mt-3" onclick="per2()">RESPONDER</button><br>
+            3)Qual é o unico protagonista de JoJo que nunca foi chamado de JoJo?<br>
+            <button class="btn btn-danger  mt-3" onclick="per3()">RESPONDER</button></h5><br>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
