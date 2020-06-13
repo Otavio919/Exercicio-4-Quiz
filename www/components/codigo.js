@@ -1,10 +1,10 @@
 // This is a JavaScript file
 function per1(){
-  navigator.notification.confirm('A)Brufford // B)Dio', esco1, 'Responda:', ['A)', 'B)']);
+  navigator.notification.confirm('A)Tarkus // B)Dio', esco1, 'Responda:', ['A)', 'B)']);
 
   function esco1(buttonIndex){
     if(buttonIndex == 1){
-      navigator.notification.alert('acertou', null, 'A)Brufford', 'OK');
+      navigator.notification.alert('acertou', null, 'A)Tarkus', 'OK');
       navigator.notification.beep(1);
     }else{
       navigator.notification.alert('Errado', null, 'B)Dio', 'OK');
